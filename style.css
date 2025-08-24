@@ -1,0 +1,3588 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+   min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+
+  box-sizing: border-box;
+  /* font-family: "Inter", sans-serif; */
+}
+
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 ;
+
+}
+
+/* Header section */
+
+ header{
+  width: 100%;;
+}
+
+.banner__inner {
+  background-color: #000;
+}
+
+.banner {
+ max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+
+.banner__text {
+  flex: 1;
+  font-size: 14px;
+  text-align: center;
+}
+
+.banner__link {
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.language__selector select {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 14px;
+}
+
+.navbar-section {
+  padding-top: 40px;
+  padding-bottom: 16px;
+  border-bottom: 0.5px solid #D9D9D9;
+}
+
+
+.logo__text {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 3%;
+
+}
+
+
+.navbar_in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.menu_li {
+  position: relative;
+  list-style: none;
+}
+
+
+.menu_li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  transform: translate(-50%);
+  transition: all 0.3s ease;
+}
+
+.menu_li:hover::after, .menu_li.active::after {
+  width: 100%;
+}
+
+
+.menu_a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #000;
+  line-height: 24px;
+}
+
+
+
+.navbar_component {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 12px 7px 24px;
+  background-color: #F5F5F5;
+  width: 243px;
+  border-radius: 4px;
+}
+
+.search__input {
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  width: 90%;
+}
+
+.navbar_component-icons img, .search__button {
+  cursor: pointer;
+}
+
+.navbar_component-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 128px;
+  height: 32px;
+}
+
+.navbar_component-icons button {
+  border: none;
+  background-color: #fff;
+  width: 32px;
+  height: 32px;
+}
+
+.hero-inner{
+  display: flex;
+  align-items: center;
+  width: 1170px;
+  gap: 45px;
+}
+
+
+
+.sidebar {
+  box-sizing: content-box;
+  width: 217px;
+  padding-top: 40px;
+  padding-right: 16px;
+  border-right: 0.5px solid #ccc;
+  
+}
+
+.sidebar__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar__menu-item {
+  list-style: none;
+}
+
+
+.sidebar__menu-link {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 217px;
+  text-decoration: none;
+  color: #000;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+
+}
+
+.sidebar__menu-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+.sidebar__menu-link:hover::after {
+  width: 100%;
+}
+
+/* Rozmatov Sardor  */
+/* Slider  */
+
+ .slider {
+  max-width: 892px;
+  width: 100%;
+  margin-top: 40px auto;
+  overflow: hidden;
+  color:#fafafa;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider__item {
+  min-width: 100%;
+   background-color: #000;
+   background-image: url(./assets/images/background-image.png);
+   background-repeat: no-repeat;
+   background-position: right;
+   padding-top: 58px;
+   padding-bottom: 11px;
+   padding-left: 64px;
+   position: relative;
+}
+
+.slider__item-content {
+  width: 294px;
+}
+
+
+.iphone__text {
+font-size: 16px;
+line-height: 24px;
+}
+
+.iphone {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+
+.slider__title {
+font-family: "Inter", sans-serif;
+max-width: 294px;
+font-weight: 600;
+font-size: 48px;
+line-height: 60px;
+margin-bottom: 22px;
+}
+
+
+.slider__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.slider__link a {
+  color: #fafafa;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+text-underline-offset: 10px;
+}
+
+
+.slider__indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+  position: absolute;
+  bottom: 20px;
+  left: 50% ;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #b3b3b3;
+  cursor: pointer;
+}
+
+.active-indicator {
+  box-sizing: content-box;
+  border: 2px solid #b3b3b3;
+  background-color: #DB4444;
+} 
+
+
+
+/* Sales section */
+
+.sales__inner {
+  display: flex;
+  align-items: end;
+  margin-top: 140px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.sales_content {
+  display: flex;
+  align-items: end;
+  gap: 87px;
+}
+
+.section__title {
+  color: #DB4444;
+  padding-left: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+width: 100px;
+height: 40px;
+border-left: 20px solid #DB4444;
+
+}
+
+.sales__top h2 {
+  font-family: "Inter", sans-serif;
+font-weight: 600;
+font-size: 36px;
+line-height: 48px;
+margin-top: 24px;
+color: #000;
+}
+
+.sales__timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 17px;
+
+}
+
+.sales__timer-item p{
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+color: #000;
+}
+
+
+.sales__timer-item span {
+  font-family: "Inter", sans-serif;
+font-weight: 700;
+font-size: 32px;
+line-height: 30px;
+color: #000;
+}
+
+
+ .sales__timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 17px;
+
+}
+
+.sales__timer-item p{
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+color: #000;
+}
+
+
+.sales__timer-item span {
+  font-family: "Inter", sans-serif;
+font-weight: 700;
+font-size: 32px;
+line-height: 30px;
+color: #000;
+} 
+
+.navigation__buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 62px;
+}
+
+
+.prev__btn, .next__btn {
+  padding: 11px;
+  border-radius: 50%;
+  border: none;
+}
+
+.prev__btn:hover, .next__btn:hover {
+  cursor: pointer;
+  background-color: #e6e1e1;
+}
+
+/* Products */
+
+.products {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  overflow-x: auto;
+  
+}
+
+.products::-webkit-scrollbar {
+  display: none;
+}
+
+
+.product__item {
+  width: 270px;
+}
+
+
+.product__image {
+  position: relative;
+  padding: 49px;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.product__discount {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 55px;
+  height: 26px;
+  padding: 4px 12px;
+  background-color: #DB4444;
+  border-radius: 4px;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+color: #fafafa;
+text-align: center;
+}
+
+
+.wishlist__btn {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  
+  top: 12px;
+  right: 0px;
+  border: none;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.view__btn {
+  position: absolute;
+  top: 54px;
+  right: 12px;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.add-to-cart-btn {
+  position: absolute;
+  width: 100%;
+  height: 41px;
+  left: 0;
+  bottom: -41px;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+cursor: pointer;
+transition: all 0.5s ease;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+
+
+.product__item:hover .add-to-cart-btn {
+  bottom: 0;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.product__name {
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #000;
+margin-top: 16px;
+}
+
+
+.product__price {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+
+.orginal__price {
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #DB4444;
+}
+
+
+.current__price {
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+text-decoration: line-through;
+color: rgba(0, 0, 0,0.5);
+}
+
+
+.product__rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+
+.rating__count {
+font-weight: 600;
+font-size: 14px;
+color: rgba(0, 0, 0,0.5);
+}
+
+.products__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.products__btn button {
+  width: 234px;
+  height: 56px;
+  padding: 16px 48px;
+  border: none;
+  outline: none;
+  background-color: #DB4444;
+  color: #fafafa;
+  border-radius: 4px;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+cursor: pointer;
+}
+
+
+.products__btn button:hover {
+  background-color: #c33f3f;
+}
+
+hr {
+  border: 0.5px solid #E3E3E3;
+  margin-top: 60px;
+}
+
+/* Rozmatov Sardor  */
+
+.modaler {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 400px;
+  background-color: #FAFAFA;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 8px;
+}
+
+.close {
+  margin-left: 340px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.add-to-cart-btnn {
+  width: 100%;
+  height: 41px;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color:#fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.close:hover, 
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Categories  */
+.categories {
+  margin-top: 80px;
+}
+
+.category__badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category__title {
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+color: #DB4444;
+width: 126px;
+height: 40px;
+padding-left: 16px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-left: 20px solid #DB4444;
+}
+
+
+.category__top h2 {
+  font-family: "Inter", sans-serif;
+font-weight: 600;
+font-size: 36px;
+line-height: 48px;
+letter-spacing: 4%;
+color: #000;
+margin-top: 20px;
+}
+
+.category__items {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.category__item {
+  width: 170px;
+  height: 145px;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  padding: 25px 57px 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.category__item:hover {
+  background-color: #DB4444;
+}
+
+
+.category__item:hover svg path {
+  stroke: #fff;
+}
+
+.category__item:hover svg line {
+  stroke: #fff;
+}
+
+.category__name {
+display: flex;
+justify-content: center;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+color: #000;
+}
+
+.category__item:hover .category__name {
+  color: white;
+}
+
+.category-under-hr {
+  margin-top: 70px;
+  width: 1190px;
+}
+
+
+/* Best Selling  */
+
+.best {
+  margin-top: 70px;
+}
+
+.best_badge {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.best__title {
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+color: #DB4444;
+padding-left: 16px;
+padding-top: 10px;
+padding-bottom: 10;
+width: 125px;
+height: 40px;
+border-left: 20px solid #DB4444;
+}
+
+
+.best__top h2 {
+  font-family: "Inter", sans-serif;
+font-weight: 600;
+font-size: 36px;
+line-height: 48px;
+margin-top: 20px;
+}
+
+.best__btn {
+  width: 159px;
+  height: 56px;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+padding: 16px 48px;
+margin-top: 52px;
+margin-right: 0px;
+color: #fff;
+background-color: #DB4444;
+border: none;
+outline: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.best__btn:hover {
+  background-color: #c33f3f;
+}
+
+.card__container {
+  display: flex;
+  margin-top: 60px;
+  gap: 30px;
+}
+
+.card__image {
+  position: relative;
+  width: 270px;
+  background-color: #F5F5F5;
+  padding: 35px 40px;
+}
+
+.card__name {
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #000;
+margin-top: 16px;
+}
+
+.card__price {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.card__rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  color: #666666;
+}
+
+/* Banner */
+
+.offer {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: 500px;
+  margin-top: 140px;
+  padding: 37px 44px 43px 56px;
+  background-color: #000;
+}
+
+.offer__title {
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+color: #00FF66;
+margin-top: 32px;
+}
+
+
+.offer__label {
+  width: 443px;
+  font-family: "Inter", sans-serif;
+font-weight: 600;
+font-size: 48px;
+line-height: 60px;
+letter-spacing: 4%;
+color: #FAFAFA;
+margin-top: 32px;
+}
+
+.offer__timer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.offer__timer button {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  padding: 14px 17px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.offer__btn {
+  width: 171px;
+  height: 56px;
+  border-radius: 4px;
+  background-color: #00FF66;
+  color: #FAFAFA;
+font-weight: 500;
+font-size: 16px;
+border: none;
+line-height: 24px;
+margin-top: 40px;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.offer__btn:hover {
+  background-color: #07cc56;
+}
+
+.right-image {
+  filter: drop-shadow(0px 30px 120px #ffffff4b)
+  drop-shadow(0px 30px 120px #ffffff37);
+}
+
+/* Products */
+
+.product-badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 71px;
+}
+
+.product__title {
+  font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+color: #DB4444;
+width: 142px;
+height: 40px;
+padding-left: 16px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-left: 20px solid #DB4444;
+}
+
+.product__top h2 {
+  font-family: "Inter", sans-serif;
+font-weight: 600;
+font-size: 36px;
+line-height: 48px;
+letter-spacing: 4%;
+color: #000;
+margin-top: 20px;
+}
+
+.our-products {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  gap: 30px;
+  row-gap: 60px;
+
+}
+
+.our-products__item {
+  width: 270px;
+}
+
+.item__image {
+  position: relative;
+  padding: 35px 40px;
+  background-color: #F5F5F5;
+  overflow: hidden;
+  height: 250px;
+}
+
+.our-products__item:hover  .add-to-cart-btn {
+  bottom: 0;
+  cursor: pointer;
+}
+
+.item__name {
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+margin-top: 16px;
+}
+
+.properties {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.item__rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card__colors {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.card__color input {
+  display: none;
+}
+
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.3 ease;
+}
+
+.color-dot.red {
+  background-color: red;
+}
+
+.color-dot.black {
+  background-color: black;
+}
+
+.card__color input:checked + .color-dot {
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #000;
+}
+
+
+.item__discount {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 55px;
+  height: 26px;
+  padding: 4px 12px;
+  background-color: #00FF66;
+  border-radius: 4px;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+color: #fafafa;
+text-align: center;
+}
+
+/* New Arrival */
+
+.new-arrival-section {
+  margin-top: 140px;
+}
+
+.arrival__title {
+  font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+color: #DB4444;
+width: 126px;
+height: 40px;
+padding-left: 16px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-left: 20px solid #DB4444;
+}
+
+.section__header h2 {
+  font-family: "Inter", sans-serif;
+font-weight: 600;
+font-size: 36px;
+line-height: 48px;
+letter-spacing: 4%;
+color: #000;
+margin-top: 20px;
+}
+
+.new-arrival {
+  display: flex;
+  margin-top: 60px;
+  gap: 30px;
+}
+
+.arrival-card-1 {
+  position: relative;
+  width: 570px;
+  height: 600px;
+  padding-top: 89px;
+  padding-right: 30px;
+  padding-left: 29px;
+  background-color: #000;
+  border-radius: 4px;
+}
+
+.new-arrival-desc {
+  position: absolute;
+  width: 242px;
+  height: 122px;
+  top: 446px;
+  bottom: 32px;
+  left: 32px;
+}
+
+.new-arrival-title {
+  font-family: "Inter", sans-serif;
+font-weight: 600;
+font-size: 24px;
+line-height: 24px;
+letter-spacing: 3%;
+color: #FAFAFA;
+margin-bottom: 16px;
+}
+
+.new-arrival-description {
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+color:#fff;
+margin-bottom: 16px;
+}
+
+.arrival__link {
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+color: #FAFAFA;
+text-underline-offset: 5px;
+transition: all 0.3s ease;
+}
+
+.arrival__link:hover {
+  color: #c2bebe;
+}
+
+.arrival-card-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 570px;
+  height: 600px;
+  row-gap: 32px;
+}
+
+.arrival-item-1 {
+  position: relative;
+  width: 570px;
+  height: 284px;
+  padding-left: 138px;
+  background-color: #0D0D0D;
+  border-radius: 4px;
+}
+
+.new-arrival-collections {
+  position: absolute;
+  width: 255px;
+  height: 122px;
+  top: 138px;
+  bottom: 24px;
+  left: 32px;
+}
+
+
+.arrival-items {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.arrival-item {
+  position: relative;
+  width: 270px;
+  height: 284px;
+  padding: 31px 30px;
+  background-color: #262626;
+  border-radius: 4px;
+}
+
+.arrival-item-descript {
+  position: absolute;
+  width: 191px;
+  height: 85px;
+  top: 167px;
+  left: 24px;
+}
+
+.new-arrival-title {
+  font-family: "Inter",sans-serif;
+font-weight: 600;
+font-size: 24px;
+line-height: 24px;
+letter-spacing: 3%;
+color: #FAFAFA;
+margin-bottom: 8px;
+}
+
+
+.new-arrival-description {
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: 0%;
+color: #fff;
+margin-bottom: 8px;
+}
+
+/* Services */
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 943px;
+  height: 165px;
+  gap: 88px;
+  margin: 140px 113.5px 140px 113.5px;
+}
+
+.services__item-img {
+  padding: 0px 84.5px 24px;
+}
+
+.services__item-title {
+color: #000;
+font-weight: 600;
+font-size: 20px;
+line-height: 28px;
+}
+
+.services__item-text {
+color: #000;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: 0%;
+text-align: center;
+margin-top: 8px;
+}
+
+.up-button {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+}
+
+.up-button button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #c8c4c4;
+  padding: 11px;
+  cursor: pointer;
+  margin-top: 62px;
+  
+}
+
+.up-button button:hover {
+  background-color: #e6e3e3;
+}
+
+
+
+.up-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 1000;
+}
+
+.up-button.visible {
+  display: block;
+}
+
+/* Rozmatov Sardor  */
+
+.profile-notification {
+    position: fixed;
+    top: -60px; 
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: 500;
+    z-index: 9999;
+    transition: top 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.profile-notification.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.profile-notification.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.profile-notification.show {
+    top: 20px; 
+    opacity: 1;
+}
+
+
+/* Rozmatov Sardor  */
+.product-images {
+  display: flex;
+  align-items: center;
+}
+
+.main-image img {
+  width: 500px;
+  height: 600px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.thumbnails-image {
+  display: flex;
+}
+
+.thumbnails-image img {
+  width: 170px;
+  height: 138px;
+  object-fit: contain;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all o.3s ease;
+  cursor: pointer;
+}
+
+.thumbnails-image img:hover {
+  border-color: #007bff;
+}
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+width: 100%;
+height: 376px;
+background-color: #000;
+margin: 0 auto;
+margin-top: 32px;
+padding-top: 80px;
+padding-bottom: 24px;
+padding-right: 135px;
+padding-left: 135px;
+}
+.footer__section {
+display: flex;
+width: 1170px;
+height: 236px;
+gap: 86px;
+}
+
+
+.footer__logo {
+  font-family: "Inter", sans-serif;
+font-weight: 700;
+font-size: 24px;
+line-height: 24px;
+letter-spacing: 3%;
+color: #fafafa;
+}
+
+.form__title {
+color: #fafafa;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+margin-top: 24px;
+}
+
+.footer__text {
+color: #fafafa;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+margin-top: 24px;
+}
+
+.form__input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 12px 12px 16px;
+  width: 217px;
+  border-radius: 4px;
+  background-color: #000;
+  gap: 32px;
+  border: 1.5px solid #fafafa;
+  margin-top: 16px;
+}
+
+.form__input input {
+  background-color: transparent;
+font-size: 16px;
+line-height: 24px;
+border: none;
+outline: none;
+width: 90%;
+color: #fafafa;
+}
+
+.footer__content-section {
+  width: 175px;
+  height: 180px;
+}
+
+.footer__section a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.footer__content-section-title {
+color: #fafafa;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+margin-bottom: 24px;
+}
+
+.footer__content-links {
+color: #fafafa;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+margin-bottom: 16px;
+}
+
+.footer__content-section-2 {
+  width: 123px;
+  height: 236px;
+}
+
+.footer__content-section-3 {
+  width: 109px;
+  height: 196px;
+}
+
+.app-download-container {
+  width: 198px;
+  height: 210px;
+}
+
+.app-title {
+color: #8e8e8e;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0%;
+margin-top: 24px;
+}
+
+.app-description {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.apps {
+  display: flex;
+  flex-direction: column;
+  column-gap: 4px;
+}
+
+.store-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 5px 3px;
+  cursor: pointer;
+}
+
+.social-icons {
+  width: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.footer-line {
+  width: auto;
+  height: 64px;
+  border-top: 1px solid #353535;
+  background-color: #000;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ color: #353535;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+margin: 16px auto 24px;
+}
+
+.copyright svg path {
+  stroke: #353535 ;
+}
+
+/* SIGN UP */
+
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 129px;
+  margin-top: 60px;
+  margin-bottom: 140px;
+}
+
+.signup__img {
+  margin-left: -115px;
+}
+
+.signup__form {
+  width: 371px;
+  height: 530px;
+  margin: 125.5px 0px;
+}
+
+.signup__form h1 {
+  font-family:"Inter", sans-serif;
+font-weight: 500;
+font-size: 36px;
+line-height: 30px;
+letter-spacing: 4%;
+color: #000;
+margin-bottom: 24px;
+}
+
+.signup__form p {
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #000;
+margin-bottom: 48px;
+}
+
+.signup__form-input {
+  width: 370px;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #AFAFAF;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #000;
+margin-bottom: 40px;
+}
+
+.creat__account-btn {
+  width: 371px;
+  height: 56px;
+  color: #fafafa;
+  background-color: #DB4444;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+padding: 16px 122px;
+border: none;
+outline: none;
+border-radius: 4px;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.creat__account-btn:hover {
+  background-color: #c33f3f;
+}
+
+.google__signup-btn {
+  width: 371px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px 86px;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+border-radius: 4px;
+border-color: #CCCCCC;
+outline: none;
+color: #000;
+margin-top: 16px;
+margin-bottom: 32px;
+cursor: pointer;
+}
+
+.google__signup-btn:hover {
+  background-color: #e9e9e9;
+}
+
+
+.signup-links {
+  width: 248px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 0px 61.5px;
+}
+
+.signup-links p {
+  margin-top: 48px;
+}
+
+.signup-links a {
+  color: #353535;
+}
+
+
+/* Log In */
+/* Rozmatov Sardor  */
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 129px;
+  margin-top: 60px;
+  margin-bottom: 140px;
+}
+
+.login__img {
+  margin-left: -115px;
+}
+
+.login__form {
+  width: 371px;
+  height: 326px;
+  margin-top: 227.5px;
+  margin-right: 0px;
+  margin-bottom: 227.5px;
+}
+
+.login__form h1 {
+  font-family:"Inter", sans-serif;
+font-weight: 500;
+font-size: 36px;
+line-height: 30px;
+letter-spacing: 4%;
+color: #000;
+margin-bottom: 24px;
+}
+
+.login__form p {
+  font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #000;
+margin-bottom: 48px;
+}
+
+.login__form-input {
+  width: 370px;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #AFAFAF;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #000;
+margin-bottom: 40px;
+}
+
+.login__btn {
+  width: 371px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 87px;
+}
+
+.login__btn button {
+  width: 143px;
+  height: 56px;
+  padding: 16px 46px;
+  color: #FAFAFA;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+background-color: #DB4444;
+border-radius: 4px;
+border: none;
+outline: none;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.login__btn button:hover {
+  background-color: #c33f3f;
+}
+
+.login__btn a {
+  text-decoration: none;
+  color: #DB4444;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
+
+/* Modal section */
+/* Rozmatov Sardor  */
+
+.modal {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+#user-toggle {
+  display: none;
+}
+
+.user-modal {
+  z-index: 1;
+  position: absolute;
+  top: 32px;
+  width: 224px;
+  height: 208px;
+  background:linear-gradient(180deg, rgba(70,50,100, 0.45), rgba(20, 20, 40, 0.45));
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  padding: 18px 12px 10px 20px;
+  opacity: 0;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(10px)
+  
+}
+
+#user-toggle:checked + label + .user-modal {
+  opacity: 1;
+  max-height: 500px;
+}
+
+.user-icon {
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.user-icon:hover svg path {
+  stroke: white ;
+}
+
+.user-icon:hover,
+#user-toggle:checked + label.user-icon {
+  background-color: #DB4444;
+}
+
+.user-icon:hover svg path,
+#user-toggle:checked + label.user-icon svg path {
+  stroke: white ;
+}
+.user-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #FAFAFA;
+  cursor: pointer;
+  transition: background 0.2s ease;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+text-align: center;
+margin-bottom: 13px;
+}
+
+.user-item a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.user-item:hover {
+  background: rgba(183, 162, 162, 0.1);
+}
+
+
+/* Wishlist section  */
+
+.wishlist-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+  height: 56px;
+}
+
+.wishlist-top a {
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: center;
+text-decoration: none;
+color: #000;
+}
+
+.wishlist-top button {
+  width: 223px;
+  height: 56px;
+  padding: 16px 48px;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #000;
+outline: none;
+cursor: pointer;
+border: 1px solid #000;
+border-radius: 4px;
+background-color: #fff;
+}
+
+.wishlist__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.wishlist__item {
+  width: 270px;
+  height: 350px;
+  position: relative;
+}
+
+/* Rozmatov Sardor  */
+
+.wishlist__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 0, 0, 0.4);
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+}
+
+.wishlist__btn.active::after {
+  animation: pulseWave 0.5s ease;
+}
+
+@keyframes pulseWave {
+  0% {transform: translate(-50%, -50%) scale(0.5); opacity: 0.7;}
+  100% {transform: translate(-50%, -50%) scale(1.8); opacity: 0;}
+}
+
+
+.wishlist__btn svg {
+  stroke: black;
+  transition:  stroke 0.3s ease, fill 0.3s ease, transform 0.2s ease;
+}
+
+
+.wishlist__btn.active svg path {
+  stroke: red;
+  fill: red;
+  transform: scale(1);
+}
+
+
+.wishlist__btn svg {
+  transition: transform 0.2s ease;
+}
+
+.wishlist__btn.active svg {
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1); fill: transparent; stroke: red;
+  }
+  50% {
+    transform: scale(1.4); fill: transparent; stroke: red;
+  }
+  100% {
+    transform: scale(1); fill: transparent; stroke: red;
+  }
+}
+
+
+.wishlist__item-img {
+  width: 270px;
+  height: 224px;
+  padding: 22px 40px;
+  background-color: #F5F5F5;
+}
+
+.product__delete {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  padding: 5px;
+  top: 12px;
+  right: 12px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.add-to-cart-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 41px;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+cursor: pointer;
+transition: all 0.5s ease;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+
+/* Suggestion section  */
+/* Rozmatov Sardor  */
+
+.suggestions {
+  margin-top: 80px;
+  margin-bottom: 140px;
+}
+
+.suggestion__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.suggestion__title {
+  font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+color: #000;
+width: 156px;
+height: 40px;
+padding-left: 16px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-left: 20px solid #DB4444;
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+text-align: center;
+margin-bottom: 7px;
+}
+
+.suggestion__top button {
+  width: 150px;
+  height: 56px;
+  padding: 16px 48px;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #000;
+outline: none;
+cursor: pointer;
+border: 1px solid #000;
+border-radius: 4px;
+background-color: #fff;
+}
+
+.suggestions__items {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.suggestion__item {
+  position: relative;
+  width: 270px;
+  height: 350px;
+  border-radius: 4px;
+}
+
+.suggestion-view__btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.suggestion__img {
+  padding: 22px 40px;
+  background-color: #F5F5F5;
+}
+
+
+/* Cart section  */
+/* Rozmatov Sardor  */
+
+.cart-home {
+  width: 103px;
+  height: 21px;
+  margin-top: 80px;
+color: #AFAFAF;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+cursor: pointer;
+}
+
+.cart-home span {
+  color: #000;
+}
+
+.cartpage {
+  margin-top: 80px;
+}
+
+.cartpage__item {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  padding: 24px 39px;
+  gap: 284px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 13px 0px #0000000D;
+
+}
+
+.cartpage__item p{
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+}
+
+
+.cartpage__item2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 102px;
+  border-radius: 4px;
+  padding: 24px 40px;
+  margin-top: 40px;
+  box-shadow: 0px 1px 13px 0px #0000000D;
+
+}
+
+.cart-btn {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  display: none; /* boshlang'ichda ko‘rinmasin */
+}
+
+
+.cartpage_img img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.cartpage_img .product__remove {
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cartpage_img .product__remove img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cartpage_img p {
+  font-size: 14px;
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.cartpage_img {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.product__remove {
+  position: absolute;
+  border: none;
+  outline: none;
+  background: none;
+  top: 20px;
+  left: 25px;
+  cursor: pointer;
+}
+
+.cartpage__item2 input {
+  display: flex;
+  align-items: center;
+  width: 72px;
+height: 44px;
+border-radius: 4px;
+border-width: 1.5px;
+padding: 6px 12px;
+outline: none;
+border: 1.5px solid #00000066
+}
+
+.cartpage__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.return-shop-button {
+  width: 218px;
+height: 56px;
+gap: 10px;
+border-radius: 4px;
+border: 1px solid #00000080;
+padding: 16px 48px;
+background-color: #fff;
+color: #000;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+cursor: pointer;
+}
+
+.update-cart-button {
+   width: 195px;
+height: 56px;
+gap: 10px;
+border-radius: 4px;
+border: 1px solid #00000080;
+padding: 16px 48px;
+background-color: #fff;
+color: #000;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+cursor: pointer;
+}
+
+.return-shop-button:hover, .update-cart-button:hover, .suggestion__top button:hover {
+  background-color: #F5F5F5;
+}
+
+
+/* Coupon section  */
+
+.coupon {
+  display: flex;
+  margin-top: 80px;
+  width: 1170px;
+  gap: 173px;
+  margin-bottom: 140px;
+}
+
+.coupon-area {
+  display: flex;
+  align-items: center;
+  width: 527px;
+height: 56px;
+gap: 16px;
+
+}
+
+.coupon-area input {
+  width: 300px;
+height: 56px;
+border-radius: 4px;
+padding: 16px 164px 16px 24px;
+color: #000;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+outline: none;
+}
+
+.coupon__btn {
+  width: 211px;
+height: 56px;
+border-radius: 4px;
+padding: 16px 48px;
+background-color: #DB4444;
+color: #FAFAFA;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+border: none;
+outline: none;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.coupon__btn:hover {
+  background-color: #ab3636;
+}
+
+.checkout {
+  width: 470px;
+height: 324px;
+border-radius: 4px;
+border  : 1.5px solid #000;
+padding: 32px 24px;
+}
+
+.checkout h2 {
+color: #000;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+margin-bottom: 16px;
+}
+
+.cart-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.checkout hr {
+  width: 422px;
+  color: #D9D9D9;
+  margin-top: 16px;
+}
+
+.checkout__btn {
+  width: 260px;
+height: 56px;
+border-radius: 4px;
+padding: 16px 48px;
+margin-left: 65px;
+background-color: #DB4444;
+color: #FAFAFA;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+border: none;
+outline: none;
+margin-top: 24px;
+transition: all 0.3 ease;
+cursor: pointer;
+}
+
+.checkout__btn:hover {
+  background-color:#c33f3f;
+}
+
+.checkout__btn a{
+  text-decoration: none;
+  color: #FAFAFA  ;
+}
+
+
+
+/* Checkout Page  */
+
+.breadcrumb {
+  margin-top: 80px;
+}
+
+.breadcrumb__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 455px;
+height: 21px;
+gap: 6px;
+}
+
+.breadcrumb__link {
+  display: flex;
+  align-items: center;
+  color: #a0a0a0;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+text-decoration: none;
+transition:  color 0.3s ease;
+}
+
+.breadcrumb__list img{
+  margin-left: 6px;
+}
+
+.breadcrumb__link:hover {
+  color: #000;
+}
+
+.current__page {
+ color: #000;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+pointer-events: none;
+}
+
+
+/* Billing section */
+
+
+.billing-title {
+  font-family: "Inter",sans-serif;
+font-weight: 500;
+font-size: 36px;
+line-height: 30px;
+letter-spacing: 4%;
+color: #000;
+margin-top: 80px;
+}
+
+.billing {
+  display: flex;
+  justify-content: space-between;
+  gap: 173px;
+  margin-top: 48px;
+  margin-bottom: 140px;
+}
+
+.form {
+  width: 470px;
+height: 766px;
+}
+
+.billing__label {
+color: #a0a0a0;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
+.billing__label span {
+  color: #DB4444;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+opacity: 40%;
+}
+
+.billing__input {
+  width: 470px;
+height: 50px;
+border-radius: 4px;
+background-color: #F5F5F5;
+border: none;
+outline: none;
+margin-top: 8px;
+margin-bottom: 32px;
+}
+
+.billing__checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 451px;
+height: 24px;
+margin-top: 24px;
+}
+
+.billing__checkbox input{
+  width: 24px;
+height: 24px;
+border-radius: 4px;
+accent-color:#DB4444;
+}
+
+.billing__checkbox label {
+ color: #000;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
+/* Summary section  */
+/* Rozmatov Sardor  */
+
+.summary {
+  width: 527px;
+height: 600px;
+margin-top: 32px;
+gap: 32px;
+
+}
+
+.summary__product-info {
+  display: flex;
+  align-items: center;
+  margin-right: 102px;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.summary_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 347px;
+height: 24px;
+color: #000;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
+.summary-cash {
+  width: 422px;
+height: 136px;
+gap: 16px;
+
+}
+
+.summary-cash hr {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.summary_prices {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.payment-method {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 427px;
+  height: 84px;
+  margin-top: 32px;
+}
+
+
+.pay-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  width: 174px;
+height: 84px;
+}
+
+.pay-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 174px;
+}
+
+.pay-top input {
+  width: 24px;
+height: 24px;
+accent-color: #000;
+}
+
+.pay-top p {
+  width: 134px;
+color: #000;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+
+}
+
+.bank-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 192px;
+height: 28px;
+}
+
+
+.summary__btns {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  width: 527px;
+height: 56px;
+gap: 16px;
+
+}
+
+.summary__coupon-input {
+  width: 300px;
+height: 56px;
+border-radius: 4px;
+border-width: 1px solid #000;
+color: #000;
+padding: 16px 164px 16px 24px;
+outline: none;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
+.apply-coupon-btn {
+  width: 211px;
+height: 56px;
+border-radius: 4px;
+gap: 10px;
+padding: 16px 48px;
+background-color: #DB4444;
+color: #FAFAFA;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+border: none;
+outline: none;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.summary__btn {
+  width: 190px;
+height: 56px;
+border-radius: 4px;
+gap: 10px;
+margin-top: 32px;
+padding: 16px 48px;
+background-color: #DB4444;
+color: #FAFAFA;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+border: none;
+outline: none;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.summary__btn:hover, .apply-coupon-btn:hover {
+  background-color: #ab3636;
+}
+
+
+
+/* Account section  */
+
+/* Rozmatov Sardor  */
+
+.bread_crumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.welcome-message p {
+color: #000;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+}
+
+.username {
+  color: #DB4444;
+  font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+}
+
+
+
+/* Account menu section  */
+/* Rozmatov Sardor  */
+
+.account__menu-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  margin-top: 80px;
+}
+
+.account-menu {
+  width: 200px;
+  height: 287px;
+}
+
+.account-section h2 {
+ color: #000;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+}
+
+.account__active-link {
+  width: 165px;
+height: 88px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+  margin-bottom: 24px;
+}
+
+.account__active-link a {
+color: #909090;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-decoration: none;
+}
+
+.account__active-link span a {
+  font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #DB4444;
+}
+
+.account__menu-link {
+  width: 138px;
+height: 56px;
+display: flex;
+flex-direction: column;
+margin-left: 35px;
+margin-bottom: 16px;
+}
+
+.account__menu-link a {
+  color: #909090;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-decoration: none;
+}
+
+/* Profile section  */
+/* Rozmatov Sardor  */
+
+.profile-edit-form {
+  width: 870px;
+height: 630px;
+border-radius: 4px;
+padding: 40px 80px;
+margin-bottom: 140px;
+box-shadow: 0px 1px 13px 0px #0000000D;
+}
+
+.registration h1 {
+ color: #DB4444;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+margin-bottom: 16px;
+}
+
+.profile-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  width: 710px;
+  height: 82px;
+}
+
+.profile__label {
+ color: #000;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
+.profile__input {
+  width: 330px;
+height: 50px;
+border-radius: 4px;
+color: #000;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+padding: 13px 16px;
+background-color: #F5F5F5;
+border: none;
+outline: none;
+margin-top: 8px;
+}
+
+.password__label {
+  color: #000;
+  font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
+.password__input {
+   width: 710px;
+height: 50px;
+border-radius: 4px;
+color: #000;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+padding: 13px 16px;
+background-color: #F5F5F5;
+border: none;
+outline: none;
+margin-top: 16px;
+}
+
+.first-input {
+  margin-top: 8px !important;
+}
+
+.account-btns {
+  display: flex;
+  align-items: center;
+  width: 303px;
+height: 56px;
+border-radius: 4px;
+margin-left: 407px;
+}
+
+.cancel_btn {
+  width: 89px;
+  height: 56px;
+  color: #000;
+  padding: 16px 32px 16px 0px;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+background-color: #fff;
+border-radius: 4px;
+border: none;
+outline: none;
+cursor: pointer;
+}
+
+.save_btn {
+  width: 214px;
+  height: 56px;
+  padding: 16px 48px;
+  font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+background-color: #DB4444;
+color: #FAFAFA;
+border-radius: 4px;
+transition: all 0.3s ease;
+  border: none;
+outline: none;
+cursor: pointer;
+}
+.save_btn:hover {
+  background-color: #ab3636;
+}
+
+/* about section */
+/* Rozmatov Sardor  */
+.about {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 75px;
+  margin-top: 42px;
+  margin-bottom: 140px;
+}
+
+.about__title {
+  width: 525px;
+height: 336px;
+margin-top: 137px;
+margin-bottom: 136px;
+}
+
+.about__title h1 {
+  font-family: "Inter", sans-serif  ;
+font-weight: 600;
+font-size: 54px;
+line-height: 64px;
+letter-spacing: 6%;
+text-align: justify;
+margin-bottom: 16px;
+}
+
+.about__title p {
+color: #000;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+margin-top: 24px;
+}
+
+.about__img {
+  margin-right: -135px;
+}
+
+/* statistics section  */
+/* Rozmatov Sardor  */
+
+.statistics {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 140px;
+}
+
+.statistics__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 270px;
+height: 230px;
+border-radius: 4px;
+border: 1px solid #0000004D;
+padding: 30px 23px;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.statistics__number {
+  font-family: "Inter",sans-serif;
+font-weight: 700;
+font-size: 32px;
+line-height: 30px;
+letter-spacing: 4%;
+color: #000;
+margin-top: 24px;
+}
+
+.statistics__desc {
+ color: #000;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
+margin-top: 12px;
+}
+
+.statistics__item:hover {
+  background-color: #DB4444;
+}
+
+.statistics__item:hover svg path {
+  stroke: black;
+}
+
+.statistics__item:hover svg path {
+  fill: white;
+}
+
+.statistics__item:hover svg circle {
+  fill:  white;
+}
+
+.statistics__item:hover .statistics__desc, .statistics__item:hover .statistics__number {
+  color: #FAFAFA;
+}
+
+/* About team section  */
+/* Rozmatov Sardor  */
+
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.team__number {
+  width: 370px;
+height: 564px;
+border-radius: 4px;
+}
+
+.team__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+height: 430px;
+border-radius: 4px;
+background-color: #F5F5F5;
+padding-top: 33px;
+}
+
+.team__name {
+  font-family: "Inter", sans-serif;
+font-weight: 500;
+font-size: 32px;
+line-height: 30px;
+letter-spacing: 4%;
+color: #000;
+margin-top: 32px;
+}
+
+.team__position {
+ color: #000;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+margin-top: 8px;
+}
+
+.team__socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.about-services {
+  margin-bottom: 140px;
+}
+
+/* Contact section  */
+/* Rozmatov Sardor  */
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 80px;
+  margin-bottom: 140px;
+}
+
+.contact__item {
+  width: 340px;
+height: 457px;
+border-radius: 4px;
+padding: 40px 35px 51px 35px;
+box-shadow: 0px 1px 13px 0px #0000000D;
+}
+
+.contact__icon {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.contact__icon p {
+color: #000;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+}
+
+.contact__item hr {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.contact__details {
+color: #000;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+margin-top: 16px;
+}
+
+/* Contact form  */
+/* Rozmatov Sardor  */
+
+.contact-form {
+  width: 800px;
+height: 457px;
+border-radius: 4px;
+padding: 40px 32px 40px 31px;
+box-shadow: 0px 1px 13px 0px #0000000D;
+}
+
+.contact-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.contact-form-input {
+  width: 235px;
+height: 50px;
+padding: 13px 118px 13px 16px;
+border: none;
+outline: none;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #000;
+background-color: #F5F5F5;
+border-radius: 4px;
+}
+
+.message-textarea {
+  width: 737px;
+height: 207px;
+border-radius: 4px;
+background-color: #F5F5F5;
+padding-top: 13px;
+padding-left: 16px;
+resize: none;
+border: none;
+outline: none;
+color: #000;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+font-family: "Poppins", sans-serif;
+}
+
+.send__btn {
+  width: 215px;
+  height: 56px;
+  padding: 16px 48px;
+  font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+background-color: #DB4444;
+color: #FAFAFA;
+border-radius: 4px;
+transition: all 0.3s ease;
+  border: none;
+outline: none;
+margin-top: 32px;
+margin-left: 522px;
+cursor: pointer;
+}
+
+.send__btn:hover {
+  background-color: #c33f3f;
+}
+
+/* Details section  */
+/* Rozmatov Sardor  */
+
+.product-image {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 140px;
+}
+.product-images {
+  width: 700px;
+  height: 600px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.thumbnails-image {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+/* Rozmatov Sardor  */
+
+.product-info {
+  width: 400px;
+  height: 600px;
+}
+
+.product-info h1 {
+  font-family: "Inter", sans-serif;
+font-weight: 600;
+font-size: 24px;
+color: #000;
+line-height: 24px;
+letter-spacing: 3%;
+margin-bottom: 16px;
+}
+
+.product__rating p {
+color: #00FF66;
+font-weight: 400;
+font-size: 14px;
+border-left: 1px solid #a0a0a0;
+line-height: 21px;
+padding-left: 16px;
+}
+
+.price {
+  font-family: "Inter", sans-serif;
+font-weight: 400;
+font-size: 24px;
+color: #000;
+line-height: 24px;
+letter-spacing: 3%;
+margin-top: 16px;
+}
+
+.product-info_desc {
+font-weight: 400;
+color: #000;
+font-size: 14px;
+line-height: 21px;
+margin-top: 24px;
+}
+
+.product-info hr {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.colors {
+  display: flex;
+  align-items: center;
+  width: 155px;
+height: 20px;
+gap: 24px;
+}
+
+.colors p {
+  font-family: "Inter", sans-serif;
+font-weight: 400;
+font-size: 20px;
+color: #000;
+line-height: 20px;
+letter-spacing: 3%;
+}
+
+.colors-input {
+  display: flex;
+  align-items: center;
+}
+
+#blue {
+  width: 20px;
+height: 20px;
+accent-color: #A0BCE0;
+}
+
+#red {
+  width: 20px;
+height: 20px;
+accent-color: #E07575;
+}
+
+.size {
+  display: flex;
+  align-items: center;
+  width: 296px;
+height: 32px;
+gap: 24px;
+margin-top: 24px;
+}
+
+.size p {
+  font-family: "Inter", sans-serif;
+font-weight: 400;
+font-size: 20px;
+color: #000;
+line-height: 20px;
+letter-spacing: 3%;
+}
+
+
+
+.size_btns {
+ display: flex;
+ align-items: center;
+ gap: 16px;
+}
+
+.size_btns button {
+  width: 32px;
+height: 32px;
+border-radius: 4px;
+border: 1px solid #00000080;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+line-height: 21px;
+color: #000;
+background-color: #fff;
+transition: all 0.3 ease;
+cursor: pointer;
+}
+
+.size_btns button:hover {
+  color: #fff;
+  background-color: #DB4444;
+}
+
+#active {
+  color: #fff;
+  background-color: #DB4444;
+}
+
+.quantitiy {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+
+
+.colors-input {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+
+.colors-input input[type="radio"] {
+  display: none;
+}
+
+
+.color-box {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+
+.color-box.blue {
+  background: #007BFF;
+}
+
+.color-box.red {
+  background: #E63946;
+}
+
+
+
+.colors-input input[type="radio"]:checked + .color-box {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+}
+
+
+
+
+
+.size_btns button {
+ 
+  padding: 6px;
+  margin: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.size_btns button.active {
+  background: #DB4444;
+  color: white;
+  border-color: black;
+}
+
+
+
+
+
+
+
+
+.count {
+  display: flex;
+  align-items: center;
+  width: 159px;
+  height: 44px;
+  border-radius: 4px;
+}
+
+.minus , .plus {
+  width: 40px;
+height: 44px;
+border: 1px solid #00000080;
+padding: 10px 8px;
+}
+
+.numbers {
+  width: 80px;
+height: 44px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-width: 1px, 0px, 1px, 0px;
+border: 1px solid #000;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+padding: 8px 34px;
+}
+
+.quantitiy__btn {
+  width: 165px;
+height: 44px;
+border-radius: 4px;
+padding: 10px 48px;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #fff;
+background-color: #DB4444;
+transition: all 0.3s ease;
+border: none;
+outline: none;
+cursor: pointer;
+}
+
+
+
+
+
+
+.quantitiy__btn:hover {
+  background-color: #c33f3f;
+}
+
+.quantitiy-saved-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+height: 40px;
+border-radius: 4px;
+border: 1px solid #00000080;
+background-color: #fff;
+cursor: pointer;
+}
+
+.delivery {
+  width: 399px;
+height: 180px;
+opacity: 1;
+border-radius: 4px;
+border: 1px solid #00000080;
+margin-top: 40px;
+}
+
+.delivery__info {
+  width: 332px;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin: 14px 51px 16px 16px;
+}
+
+.return-delivery__info {
+  width: 332px;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin: 14px 51px 24px 16px;
+}
+
+.free-delivery {
+  width: 276px;
+height: 50px;
+}
+
+.delivery hr {
+  margin-bottom: 16px;
+}
+
+.free-delivery h3 {
+color: #000;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+margin-bottom: 8px;
+}
+
+.free-delivery p {
+font-weight: 400;
+font-size: 12px;
+font-style: Medium;
+line-height: 18px;
+letter-spacing: 0%;
+text-decoration: underline;
+text-decoration-style: solid;
+text-underline-offset: 0%;
+color: #000;
+}
+
+.return-delivery__info p {
+text-decoration: none;
+font-weight: 500;
+font-style: Medium;
+font-size: 12px;
+line-height: 18px;
+color: #000;
+}
+
+.return-delivery__info p span {
+font-weight: 500;
+font-style: Medium;
+font-size: 12px;
+line-height: 18px;
+color: #000;
+text-decoration: underline;
+text-decoration-style: solid;
+text-underline-offset: 0%;
+}
+
+
+/* Rozmatov Sardor  */
+
+/* Related section  */
+
+.related-items-section {
+  margin-bottom: 140px;
+}
+
+.related {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  overflow-x: auto;
+  margin-top: 60px;
+}
+
+.related__item {
+  width: 270px;
+}
+
+.related::-webkit-scrollbar {
+  display: none;
+}
+
+.related__image {
+  position: relative;
+  padding: 49px;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+
+.related__item:hover .add-to-cart-btn {
+  bottom: 0;
+  cursor: pointer;
+}
+
+
+.related__price {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+
+.related__rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header section  -->
+    <header class="header">
+        <div class="banner__inner">
+            <div class="container">
+                <div class="banner">
+                    <p class="banner__text">
+                        Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+                        <a name="top" href="#" class="banner__link">ShopNow</a>
+                    </p>
+                    <div class="language__selector">
+                        <select class="language__selector select">
+                            <option value="en">English</option>
+                            <option value="uz">Uzbek</option>
+                            <option value="ru">Russian</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Navbar section -->
+
+        <div class="navbar-section">
+            <div class="container">
+                <div class="navbar_in">
+                    <div class="logo">
+                        <p class="logo__text">Exclusive</p>
+                    </div>
+                    <nav class="navbar">
+                        <ul class="menu">
+                            <li class="menu_li active"><a href="./index.html" class="menu_a">Home</a></li>
+                            <li class="menu_li"><a href="#" class="menu_a">Contact</a></li>
+                            <li class="menu_li"><a href="./about.html" class="menu_a">About</a></li>
+                            <li class="menu_li"><a href="./sign-up.html" class="menu_a">Sign Up</a></li>
+                        </ul>
+
+                    </nav>
+
+                    <div class="navbar_component ">
+                        <div class="search">
+                            <input type="text" class="search__input " placeholder="What are you looking for?">
+                            <img class="search__button" src="./assets/icons/search.svg" alt="search">
+                        </div>
+
+                        <div class="navbar_component-icons">
+                            <button><a href="./wishlist-page.html"><img src="./assets/icons/saved.svg"
+                                        alt="saved"></a></button>
+                            <button><a href="./cart-page.html"><img style="margin-left: -5px;"
+                                        src="./assets/icons/cart.svg" alt="cart"></a></button>
+
+                            <!-- Modal section  -->
+                            <div class="modal container">
+                                <input type="checkbox" id="user-toggle">
+                                <label for="user-toggle" class="user-icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24 27V24.3333C24 22.9188 23.5224 21.5623 22.6722 20.5621C21.8221 19.5619 20.669 19 19.4667 19H11.5333C10.331 19 9.17795 19.5619 8.32778 20.5621C7.47762 21.5623 7 22.9188 7 24.3333V27"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M16.5 14C18.9853 14 21 11.9853 21 9.5C21 7.01472 18.9853 5 16.5 5C14.0147 5 12 7.01472 12 9.5C12 11.9853 14.0147 14 16.5 14Z"
+                                            stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </label>
+
+                                <div class="user-modal">
+                                    <div class="user-item">
+                                        <img src="./assets/icons/white-user.svg" alt="white-user"><a
+                                            href="./account.html">Manage My Account</a>
+                                    </div>
+
+                                    <div class="user-item">
+                                        <img src="./assets/icons/icon-mallbag.svg" alt="icon-mallbag">My Order
+                                    </div>
+
+                                    <div class="user-item">
+                                        <img src="./assets/icons/icon-cancel.svg" alt="icon-cancel">My Cancellations
+                                    </div>
+
+                                    <div class="user-item">
+                                        <img src="./assets/icons/Icon-Reviews.svg" alt="Icon-Reviews">My Reviews
+                                    </div>
+
+                                    <div class="user-item">
+                                        <img src="./assets/icons/Icon-logout.svg" alt="Icon-logout">Logout
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+    </header>
+
+    <!-- Main section  -->
+    <main>
+        <!-- Details section  -->
+        <div class="details-inner container">
+            <div class="breadcrumb">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Account <img
+                                src="./assets/icons/line.svg" alt="line"></a></li>
+                    <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Gaming <img
+                                src="./assets/icons/line.svg" alt="line"></a></li>
+                    <li class="breadcrumb__item"><a href="#" class="breadcrumb__link current__page">Havic HV G-92
+                            Gamepad</a></li>
+                </ul>
+            </div>
+
+            <!-- Rozmatov Sardor  -->
+            <div class="product-image-section">
+                <div class="product-image">
+                    <div class="product-images">
+                        <div class="thumbnails-image">
+                            <img src="./assets/images/first-gamepad.png" alt="first-gamepad">
+                            <img src="./assets/images/second-gamepad.png" alt="second-gamepad">
+                            <img src="./assets/images/third-gamepad.png" alt="third-gamepad">
+                            <img src="./assets/images/fourth-gamepad.png" alt="fourth-gamepad">
+                        </div>
+
+                        <div class="main-image">
+                            <img src="./assets/images/fifth-gamepad.png" alt="fifth-gamepad">
+                        </div>
+                    </div>
+
+                    <!-- Rozmatov Sardor  -->
+                    <div class="product-info">
+                        <h1>Havic HV G-92 Gamepad</h1>
+
+                        <div class="product__rating">
+                            <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                            <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                            <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                            <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                            <img src="./assets/icons/gray-star.svg" alt="gray-star">
+                            <span class="rating__count">(150 Reviews)</span>
+                            <p class="stock">In Stock</p>
+                        </div>
+
+                        <p class="price">$192.00</p>
+
+                        <p class="product-info_desc">
+                            PlayStation 5 Controller Skin High quality vinyl with air channel adhesive
+                            for easy bubble free install & mess free removal Pressure sensitive.
+                        </p>
+
+                        <hr>
+
+                       
+                        <div class="colors">
+                            <p>Colours:</p>
+                            <div class="colors-input">
+                                <input type="radio" id="blue" name="color" value="blue">
+                                <label for="blue" class="color-box blue"></label>
+
+                                <input type="radio" id="red" name="color" value="red">
+                                <label for="red" class="color-box red"></label>
+                            </div>
+                        </div>
+
+                        
+                        <div class="size">
+                            <p>Size:</p>
+                            <div class="size_btns">
+                                <button>XS</button>
+                                <button>S</button>
+                                <button class="active">M</button>
+                                <button>L</button>
+                                <button>XL</button>
+                            </div>
+                        </div>
+
+                        
+                        <div class="quantitiy">
+                            <div class="count">
+                                <button class="minus" aria-label="Decrease quantity">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 12H4" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                                    </svg>
+                                </button>
+
+                                <span class="numbers">2</span>
+
+                                <button class="plus" aria-label="Increase quantity">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 20V12M12 12V4M12 12H20M12 12H4" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <button class="quantitiy__btn">Buy Now</button>
+                            <button class="quantitiy-saved-btn">
+                                <img src="./assets/icons/saved.svg" alt="saved">
+                            </button>
+                        </div>
+
+                        
+                        <div class="delivery">
+                            <div class="delivery__info">
+                                <img src="./assets/icons/black-delivery.svg" alt="black-delivery">
+                                <div class="free-delivery">
+                                    <h3>Free Delivery</h3>
+                                    <p>Enter your postal code for Delivery Availability</p>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="return-delivery__info">
+                                <img src="./assets/icons/black-return.svg" alt="black-return">
+                                <div class="free-delivery">
+                                    <h3>Return Delivery</h3>
+                                    <p>Free 30 Days Delivery Returns. <span>Details</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Rozmatov Sardor  -->
+        <!-- Related section  -->
+        <div class="related-items-inner container">
+            <div class="related-items-section">
+                <div class="product__top">
+                    <p class="product__title">Related Item</p>
+                </div>
+
+                <div class="related">
+                    <div class="related__item">
+                        <div class="related__image">
+                            <img src="./assets/images/havit.png" alt="havit">
+                            <p class="product__discount">-40%</p>
+                            <button class="wishlist__btn">
+                                <img src="./assets/icons/wishlis-icon.svg" alt="wishlist-icon">
+                            </button>
+                            <button class="view__btn">
+                                <img src="./assets/icons/view-btn.svg" alt="view-btn">
+                            </button>
+                            <button class="add-to-cart-btn">Add To Cart</button>
+                        </div>
+
+                        <div class="product__desc">
+                            <p class="product__name">HAVIT HV-G92 Gamepad</p>
+                            <div class="related__price">
+                                <span class="orginal__price">$120</span>
+                                <span class="current__price">$160</span>
+                            </div>
+
+                            <div class="related__rating">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+
+                                <span class="rating__count">(88)</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="product__item">
+                        <div class="product__image" style="padding: 15px 40px 55px;">
+                            <img src="./assets/images/keyboard.png" alt="keyboard">
+                            <p class="product__discount">-35%</p>
+                            <button class="wishlist__btn">
+                                <img src="./assets/icons/wishlis-icon.svg" alt="wishlist-icon">
+                            </button>
+                            <button class="view__btn">
+                                <img src="./assets/icons/view-btn.svg" alt="view-btn">
+                            </button>
+                            <button class="add-to-cart-btn">Add To Cart</button>
+                        </div>
+
+                        <div class="product__desc">
+                            <p class="product__name">AK-900 Wired Keyboard</p>
+                            <div class="product__price">
+                                <span class="orginal__price">$960</span>
+                                <span class="current__price">$1160</span>
+                            </div>
+
+                            <div class="product__rating">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                                <img src="./assets/icons/gray-star.svg" alt="star-icon">
+
+                                <span class="rating__count">(75)</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="product__item">
+                        <div class="product__image" style="padding: 60px 50px;">
+                            <img src="./assets/images/monitor.png" alt="monitor">
+                            <p class="product__discount">-30%</p>
+                            <button class="wishlist__btn">
+                                <img src="./assets/icons/wishlis-icon.svg" alt="wishlist-icon">
+                            </button>
+                            <button class="view__btn">
+                                <img src="./assets/icons/view-btn.svg" alt="view-btn">
+                            </button>
+                            <button class="add-to-cart-btn">Add To Cart</button>
+                        </div>
+
+                        <div class="product__desc">
+                            <p class="product__name">IPS LCD Gaming Monitor</p>
+                            <div class="product__price">
+                                <span class="orginal__price">$370</span>
+                                <span class="current__price">$400</span>
+                            </div>
+
+                            <div class="product__rating">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+
+                                <span class="rating__count">(99)</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="product__item">
+                        <div class="product__image" style="padding: 35px 40px;">
+                            <img src="./assets/images/cooler.png" alt="cooler">
+
+                            <button class="wishlist__btn">
+                                <img src="./assets/icons/wishlis-icon.svg" alt="wishlist-icon">
+                            </button>
+                            <button class="view__btn">
+                                <img src="./assets/icons/view-btn.svg" alt="view-btn">
+                            </button>
+                            <button class="add-to-cart-btn">Add To Cart</button>
+                        </div>
+
+                        <div class="product__desc">
+                            <p class="product__name">RGB liquid CPU Cooler </p>
+                            <div class="product__price">
+                                <span class="orginal__price">$160</span>
+                                <span class="current__price">$170</span>
+                            </div>
+
+                            <div class="product__rating">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                                <img src="./assets/icons/star-icon.svg" alt="star-icon">
+                                <img src="./assets/icons/star-half-filled.svg" alt="star-icon">
+
+                                <span class="rating__count">(65)</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner container">
+            <div class="footer__section">
+                <div class="footer_tag">
+                    <h3 class="footer__logo">Exclusive</h3>
+                    <p class="form__title">Subscribe</p>
+                    <p class="footer__text">Get 10% off your first order</p>
+                    <div class="form__input">
+                        <input type="text" placeholder="Enter your email">
+                        <img src="./assets/icons/icon-send (1).svg" alt="icon-send">
+                    </div>
+                </div>
+
+                <div class="footer__content-section">
+                    <h3 class="footer__content-section-title">Support</h3>
+                    <p class="footer__content-links"><a href="#">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</a>
+                    </p>
+                    <p class="footer__content-links"><a href="#">exclusive@gmail.com</a></p>
+                    <p class="footer__content-section-text"><a href="#">+88015-88888-9999</a></p>
+                </div>
+
+                <div class="footer__content-section-2">
+                    <h3 class="footer__content-section-title">Account</h3>
+                    <p class="footer__content-links"><a href="#">My Account</a></p>
+                    <p class="footer__content-links"><a href="#">Login / Register</a></p>
+                    <p class="footer__content-links"><a href="#">Cart</a></p>
+                    <p class="footer__content-links"><a href="#">Wishlist</a></p>
+                    <p class="footer__content-section-text"><a href="#">Shop</a></p>
+                </div>
+
+                <div class="footer__content-section-3">
+                    <h3 class="footer__content-section-title">Quick Link</h3>
+                    <p class="footer__content-links"><a href="#">Privacy Policy</a></p>
+                    <p class="footer__content-links"><a href="#">Terms Of Use</a></p>
+                    <p class="footer__content-links"><a href="#">FAQ</a></p>
+                    <p class="footer__content-section-text"><a href="#">Contact</a></p>
+                </div>
+
+                <div class="app-download-container">
+                    <h3 class="footer__content-section-title">Download App</h3>
+                    <p class="app-title">Save $3 with App New User Only</p>
+                    <div class="app-description">
+                        <img src="./assets/icons/qr-code.svg" alt="qr-code">
+                        <div class="apps">
+                            <button class="store-button"><img src="./assets/icons/google-play.svg"
+                                    alt="google-play"></button>
+                            <button class="store-button"><img src="./assets/icons/download-appstore (1).svg"
+                                    alt="download-appstore"></button>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <span><img src="./assets/icons/facebook-icon.svg" alt="facebook-icon"></span>
+                        <span><img src="./assets/icons/twitter.svg" alt="twitter"></span>
+                        <span><img src="./assets/icons/icon-instagram (1).svg" alt="icon-instagram"></span>
+                        <span><img src="./assets/icons/icon-linkidin.svg" alt="icon-linkidin"></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="footer-line">
+            <p class="copyright"> <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.5 18.3332C15.1024 18.3332 18.8334 14.6022 18.8334 9.99984C18.8334 5.39746 15.1024 1.6665 10.5 1.6665C5.89765 1.6665 2.16669 5.39746 2.16669 9.99984C2.16669 14.6022 5.89765 18.3332 10.5 18.3332Z"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M13 8.14799C13 8.14799 11.9706 6.6665 10.2549 6.6665C8.53924 6.6665 7.16669 8.14799 7.16669 9.99984C7.16669 11.8517 8.53924 13.3332 10.2549 13.3332C11.9706 13.3332 13 11.8517 13 11.8517"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                Copyright Rimel 2022. All right reserved</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
